@@ -10,7 +10,7 @@ html {
 
 .page {
   inline-size: 1200px;
-  min-block-size: 100vh;   /* вместо block-size: 100% */
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -19,7 +19,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 133px 30px;      /* вероятно, нужен отступ, см. 2.2 */
 }
 
 h1,
@@ -96,6 +95,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
+  /* Убрано position: relative */
 }
 
 .result__video {
